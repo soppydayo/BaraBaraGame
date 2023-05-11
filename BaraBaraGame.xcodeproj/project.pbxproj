@@ -13,6 +13,8 @@
 		7007179B2A0C8D560003F92D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 700717992A0C8D560003F92D /* Main.storyboard */; };
 		7007179D2A0C8D580003F92D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7007179C2A0C8D580003F92D /* Assets.xcassets */; };
 		700717A02A0C8D580003F92D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7007179E2A0C8D580003F92D /* LaunchScreen.storyboard */; };
+		700717AF2A0CCB170003F92D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700717AE2A0CCB170003F92D /* GameViewController.swift */; };
+		700717B12A0CCB950003F92D /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700717B02A0CCB950003F92D /* RankingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7007179C2A0C8D580003F92D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7007179F2A0C8D580003F92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		700717A12A0C8D580003F92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		700717AE2A0CCB170003F92D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		700717B02A0CCB950003F92D /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				700717932A0C8D560003F92D /* AppDelegate.swift */,
 				700717952A0C8D560003F92D /* SceneDelegate.swift */,
 				700717972A0C8D560003F92D /* ViewController.swift */,
+				700717AE2A0CCB170003F92D /* GameViewController.swift */,
+				700717B02A0CCB950003F92D /* RankingViewController.swift */,
 				700717992A0C8D560003F92D /* Main.storyboard */,
 				7007179C2A0C8D580003F92D /* Assets.xcassets */,
 				7007179E2A0C8D580003F92D /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				700717B12A0CCB950003F92D /* RankingViewController.swift in Sources */,
+				700717AF2A0CCB170003F92D /* GameViewController.swift in Sources */,
 				700717982A0C8D560003F92D /* ViewController.swift in Sources */,
 				700717942A0C8D560003F92D /* AppDelegate.swift in Sources */,
 				700717962A0C8D560003F92D /* SceneDelegate.swift in Sources */,

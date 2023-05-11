@@ -59,14 +59,55 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func stop() {
-        if timer.isValid == true{
+        if timer.isValid == true {
             timer.invalidate()
+            
+            
+            for i in 0..<3 {
+                score = score - abs(Int(width/2 - positionX[i]))*2
+            }
+            
+            resultLabel.text = "Score: " + String(score)
+            
+            resultLabel.isHidden = false
+            
+            
+            let highscore1: Int = saveData.integer(forKey: "score1")
+            let highscore2: Int = saveData.integer(forKey: "score2")
+            let highscore3: Int = saveData.integer(forKey: "score3")
+            
+            if score > highscore1 {
+                saveData.set(score, forKey: "score1")
+                saveData.set(highscore1, forKey: "score2")
+                saveData.set(highscore2, forKey: "score3")
+            }else if score > highscore2 {
+                saveData.set(score, forKey: "score2")
+                saveData.set(highscore2, forKey: "score3")
+            } else if score > highscore3 {
+                saveData.set(score, forKey: "score3")
+            }
+            
         }
         
-        for i in 0..<3 {
-            score = score - abs(Int(width/2 - positionX[i]))*2
+        
+    }
+    
+    
+    @IBAction func retry() {
+        score = 1000
+        
+        positionX = [width/2, width/2, width/2]
+        
+        if timer.isValid == false{
+            
+            self.start()
         }
     }
+    
+    @IBAction func toTop() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     
     

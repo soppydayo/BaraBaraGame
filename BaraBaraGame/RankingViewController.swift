@@ -8,11 +8,25 @@
 import UIKit
 
 class RankingViewController: UIViewController {
+    
+    @IBOutlet var rankinglabel1: UILabel!
+    @IBOutlet var rankinglabel2: UILabel!
+    @IBOutlet var rankinglabel3: UILabel!
+    
+    let saveData: UserDefaults = UserDefaults.standard
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        rankinglabel1.text = String(saveData.integer(forKey: "score1"))
+        rankinglabel2.text = String(saveData.integer(forKey: "score2"))
+        rankinglabel3.text = String(saveData.integer(forKey: "score3"))
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func toTop() {
+        self.dismiss(animated: true, completion:  nil)
     }
     
 
